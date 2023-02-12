@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Panel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,13 +42,14 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(1, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 283);
-            this.panel1.TabIndex = 0;
+            this.Panel.BackColor = System.Drawing.Color.White;
+            this.Panel.Location = new System.Drawing.Point(1, 1);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(801, 283);
+            this.Panel.TabIndex = 0;
+            this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
             // groupBox1
             // 
@@ -136,7 +137,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Panel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -149,7 +150,7 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel Panel;
         private GroupBox groupBox1;
         private Label label3;
         private ComboBox FigureComboBox;
